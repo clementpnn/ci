@@ -1,0 +1,23 @@
+meta {
+  name: Shorten
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/v4/shorten
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "group_guid": "your_group_guid",
+      "domain": "bit.ly",
+      "long_url": "your_url"
+  }
+}
