@@ -2,6 +2,8 @@ import path from "node:path"
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react-swc"
 import svgr from "vite-plugin-svgr"
+import { test } from "vitest"
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
@@ -10,5 +12,9 @@ export default defineConfig({
       // eslint-disable-next-line unicorn/prefer-module
       "@": path.resolve(__dirname, "./src")
     }
+  },
+  test: {
+    environment: "jsdom",
+    globals: true
   }
 })
