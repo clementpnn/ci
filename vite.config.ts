@@ -2,6 +2,7 @@ import path from "node:path"
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react-swc"
 import svgr from "vite-plugin-svgr"
+// eslint-disable-next-line
 import { test } from "vitest"
 
 // https://vitejs.dev/config/

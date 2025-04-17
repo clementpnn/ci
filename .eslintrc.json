@@ -30,6 +30,7 @@
         }
       }
     ],
+    "unicorn/no-abusive-eslint-disable": "off",
     "unicorn/no-keyword-prefix": "off",
     "unicorn/prevent-abbreviations": "off",
     "no-unused-vars": [
