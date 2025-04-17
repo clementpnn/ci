@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: cliplink
+  IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/cliplink
 
 jobs:
   build:
